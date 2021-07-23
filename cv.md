@@ -34,8 +34,8 @@ I am not strong physically but strong in spirit, very communicative and stress-r
 [course](https://www.codecademy.com/users/6086549107/achievements)
 * 2020 - 2021 Self-coding using Figma layouts:
 * 2018 - Software testing basics courses in Andersen:
-https://skippik.github.io/heartRateMonitor/
-https://skippik.github.io/JobHanter/
-https://skippik.github.io/venom_2
+* [link-1](https://skippik.github.io/heartRateMonitor/)
+* [link-2](https://skippik.github.io/JobHanter/)
+* [link-3](https://skippik.github.io/venom_2)
 
 # English level: A1
