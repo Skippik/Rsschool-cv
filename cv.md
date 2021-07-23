@@ -17,7 +17,7 @@ I am not strong physically but strong in spirit, very communicative and stress-r
 5. Figma
 6. windows server
 7. SCSS
-
+8. SASS
 
 
 ## Experience
