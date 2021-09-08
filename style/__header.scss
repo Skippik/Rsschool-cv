@@ -9,6 +9,10 @@ header {
 
 .header-row {
     background-color: rgb(83, 78, 78);
+    & .row {
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .fixed {
@@ -30,10 +34,7 @@ header {
 }
 
 
-header .row {
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 
 .name__logo a {

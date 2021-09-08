@@ -82,7 +82,10 @@ header {
     padding-top: 30px;
 }
 
+
 .education-content {
+    display: block;
+    justify-content: center;
     & .box {
         width: 100%;
         max-width: 340px;
@@ -92,14 +95,30 @@ header {
 
 .experience-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     & .box {
         width: 100%;
-        max-width: 470px;
+        max-width: 370px;
         height: 100px;
     }
 }
+
+.portfolio-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: nowrap;
+}
+
+.portfolio-row {
+    display: flex;
+    justify-content: center;
+}
+
+
 
 }
 
@@ -112,6 +131,7 @@ header {
             display: flex;
             justify-content: center;
             flex-direction: column;
+            margin: 0;
         }
     }
 
