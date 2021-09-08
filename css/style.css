@@ -1288,6 +1288,41 @@ footer .row {
           justify-content: center;
 }
 
+.social_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social_footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0;
+}
+
+.social_footer ul li {
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.social_footer ul li:last-child {
+  margin-right: 0;
+}
+
 .footer-name {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
