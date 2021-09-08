@@ -1,8 +1,15 @@
 .about-me {
+    display: flex;
+    justify-content: center;
+    align-items:center;
     padding: 100px 15px;
     background-color: rgb(97, 103, 112);
 }
-  
+
+.title {
+  text-align: center;
+}
+
 .img {
     max-width: 50%;
 }
@@ -95,30 +102,20 @@
   }
 
 .contacts {
-    width: 100%;
+    margin-top: 20px;
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .social_networks {
     margin-top: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 400px;
     & ul {
         margin: 0;
         padding: 0;
         display: flex;
-        list-style-type: none;
         justify-content: space-around;
-        align-items:center;
-        & li {
-            padding-right: 32px;
-        }
-        & li:last-child {
-            padding-right: 0;
-        }
+        list-style-type: none;
     }
 }
 

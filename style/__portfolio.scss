@@ -9,23 +9,28 @@
 
 .portfolio-content {
     display: flex;
-    flex-wrap: wrap;
-    flex: 0 0 100%;
     max-width: 100%;
     justify-content: space-between;
 }
 
 .portfolio-box {
-    flex: 0 0 calc(33.33% - 20px);
-    max-width: calc(33.33% - 20px);
+    width: 100%;
+    // width: 600px;
     border: 1px solid #ddd;
     background-color: rgb(236, 241, 250);
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin-top: 20px;
+    margin-right: 20px;
+}
+.portfolio-box:last-child {
+    margin-right: 0;
 }
 
 .portfolio-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
 }
 
