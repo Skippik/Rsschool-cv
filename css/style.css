@@ -30,19 +30,7 @@ header {
   right: 0px;
   border-bottom: 1px solid #423940;
   z-index: 11;
-}
-
-.header-row {
-  background-color: #534e4e;
-}
-
-.header-row .row {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background-color: #585458a9;
 }
 
 .fixed {
@@ -178,6 +166,8 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .title {
@@ -261,6 +251,9 @@ header {
 }
 
 @media (max-width: 767px) {
+  .header-row {
+    width: 100%;
+  }
   .navbar {
     position: absolute;
     background-color: #ecf1fa;
@@ -472,17 +465,6 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .about_me-container .contacts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .education-content {
     max-width: 100%;
     display: -webkit-box;
@@ -545,7 +527,7 @@ header {
 
 @media (max-width: 653px) {
   header {
-    height: 80px;
+    height: 60px;
   }
 }
 
@@ -582,10 +564,6 @@ header {
 }
 
 @media (max-width: 376px) {
-  .contacts {
-    width: 100%;
-    max-width: 340px;
-  }
   .full-screen {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -927,30 +905,20 @@ header {
 
 .contacts {
   margin-top: 20px;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .social_networks {
   margin-top: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 400px;
 }
 
 .social_networks ul {
@@ -959,20 +927,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style-type: none;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.social_networks ul li {
-  padding-right: 32px;
-}
-
-.social_networks ul li:last-child {
-  padding-right: 0;
+  list-style-type: none;
 }
 
 .socia_main {

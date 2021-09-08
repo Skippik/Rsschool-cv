@@ -17,6 +17,9 @@
 
 
 @media(max-width: 767px) {
+    .header-row {
+        width: 100%;
+    }
     .navbar {
         position: absolute;
         background-color: rgb(236, 241, 250);
@@ -118,8 +121,6 @@ header {
     justify-content: center;
 }
 
-
-
 }
 
 @media(max-width: 758px) {
@@ -188,11 +189,6 @@ header {
             align-items:center;
             justify-content: center;
         }
-        & .contacts {
-            display: flex;
-            justify-content: center;
-            align-items:center;
-        }
     }
 
 
@@ -235,11 +231,8 @@ header {
 
 @media(max-width: 653px) {
     header {
-        height: 80px;
+        height: 60px;
     }
-    // .navbar {
-    //     display: none;
-    // }
 } 
 
 
@@ -279,10 +272,6 @@ header {
 }
 
 @media(max-width: 376px) {
-    .contacts {
-        width: 100%;
-        max-width: 340px;
-    }
     .full-screen {
         justify-content: center;
         align-items:flex-start;

@@ -5,15 +5,10 @@ header {
     right: 0px;
     border-bottom: 1px solid #423940;
     z-index: 11;
+    background-color: #585458a9;
 }
 
-.header-row {
-    background-color: rgb(83, 78, 78);
-    & .row {
-        justify-content: space-between;
-        align-items: center;
-    }
-}
+
 
 .fixed {
     background-color: rgb(236, 241, 250);
