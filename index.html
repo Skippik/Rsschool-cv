@@ -1,111 +1,328 @@
 <!DOCTYPE html>
-<html lang="Ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/bootstrap-reboot.css">
-    <link rel="stylesheet" href="./style/bootstrap.css">
-    <link rel="stylesheet" href="./style/style.css">
-    <title>Evgeny Volkov-CV</title>
-</head>
-<body>
-    <main>
-        <div class="container">
-            <section> 
-                <h1>
-                    <a href="https://skippik.github.io/rsschool-cv/cv" class="link__rsschool">rsschool-cv</a>
-                </h1>
-                <hr/>
-                <h2 class="name">Evgeny Volkov</h2>
-                <img src="./img/photo.jpg" alt="photo" class="photo"/>
-                <h2>Contacts:</h2>
-                <hr>
-                <ul>
-                    <li>
-                        <strong>Tel.:</strong>+375 29 129 08 91 (MTS)
-                    </li>
-                    <li>
-                        <strong>E-mail:</strong>
-                        <a href="Skippik1111@gmail.com">Skippik1111@gmail.com</a>
-                    </li>
-                    <li>
-                        <strong>Telegram:</strong>
-                        <a href="https://t.me/skippik">https://t.me/skippik</a>
-                    </li>
-                </ul>
-                <h2>Summary</h2>
-                <hr/>
-                <p>
-                    The first and foremost goal is to become an experienced Web developer. I really want to work in a team of professionals under the guidance of experienced mentors, on really cool projects. I am not strong physically but strong in spirit, very communicative and stress-resistant. I approach my tasks responsibly. I spend my free time with friends or learning the great and powerful JS. Not married.
-                </p>
-            <h2>Skills</h2>
-            <hr/>
-            <ul>
-                <li>HTML basic knowledge</li>
-                <li>CSS basic knowledge</li>
-                <li>Figma</li>
-                <li>windows</li>
-                <li>windows server</li>
-                <li>Linux</li>
-            </ul>
-            <h2>Experience</h2>
-            <hr/>
-            <ul>
-                <li>
-                    2012-2021 System administrator of NPP “Belkotlomash” ООО
-                </li>
-                <li>
-                    2017-2021 System administrator of ООО “BelBoilerTreid” and NPP “Belkotlomash” ООО
-                </li>
-            </ul>
-            <p>Development and supervising of the following systems:</p>
-            <ul>
-                <li>
-                    2012: Since 2012, he created the entire infrastructure of the enterprise from scratch
-                </li>
-                <li>
-                    2020: Configuring and maintaining a cluster of VMWare viruses
-                </li>
-            </ul>
-            <h2>Education</h2>
-            <hr />
-            <ul>
-                <li>
-                    2016-2018 itebsk State Polytechnic College - “Information technology software”
-                </li>
-                <li>
-                    2020 HTML / CSS Basics: 
-                    <a href=" https://www.codecademy.com/users/6086549107/achievements"> https://www.codecademy.com/users/6086549107/achievements</a>
-                </li>
-            </ul>
-            <p>2020 - 2021 Self-coding using Figma layouts:</p>
-            <ul>
-                <li>
-                    <a href="https://skippik.github.io/heartRateMonitor/">https://skippik.github.io/heartRateMonitor/</a>
-                </li>
-                <li>
-                    <a href="https://skippik.github.io/JobHanter/">https://skippik.github.io/JobHanter/</a>
-                </li>
-                <li>
-                    <a href="https://skippik.github.io/venom_2/">https://skippik.github.io/venom_2/</a>
-                </li>
-            </ul>
-            <h2>English level</h2>
-            <hr/>
-            <ul>
-                <li>A1 In the Active phase of the study</li>
-            </ul>
-            <hr>
-        </section>
-        </div>
-    </main>
-    <footer class="container">
-        <a href="https://github.com/Skippik">https://github.com/Skippik</a>
-        <p>2021</p>
-        <a href="https://rs.school/js-stage0/">
-            <img src="./img/rs_school_js.svg" alt="photo" class="logo__footer"/>
-        </a>
-    </footer>
-</body>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./css/style.css">
+   </head>
+   <body id="body">
+      <header class=" header-row">
+         <div class="container">
+            <div class="row ">
+               <div class="name__logo">
+                  <a href="#" class="logo"><img src="./icons/rs_school_js.svg" alt=""></a>
+               </div>
+               <div class="menu__icon" id="menu-icon">
+                  <span></span>
+               </div>
+               <div class="navbar">
+                  <ul>
+                     <li><a id="a" href="#home" class="active">Home</a></li>
+                     <li><a id="a" href="#about">About me</a></li>
+                     <li><a id="a" href="#education">Education</a></li>
+                     <li><a id="a" href="#experience">Experience</a></li>
+                     <li><a id="a" href="#portfolio">My projects</a></li>
+                     <li><a id="a" href="#footer">Footer</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- Блок о себе кратко -->
+      <section class="home" id="home">
+         <div class="container">
+            <div class="row full-screen">
+               <div class="home-content">
+                  <div class="block home-block">
+                     <h6>Hi, my name is</h6>
+                     <h1>Evgeny Volkov</h1>
+                     <h3>Junior Front-end developer</h3>
+                     <div class="cv-btn">
+                        <a href="#">Donwload CV</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- о себе более подробно -->
+      <section class="about-me" id="about">
+         <div class="container about_me-container">
+         <div class="row">
+            <div class="title">
+               <h1>About Me</h1>
+            </div>
+         </div>
+         <div class="row">
+            <div class="about-content">
+               <div class="row">
+                  <div class="img">
+                     <img src="./img/me.jpg" alt='me' />
+                  </div>
+                  <div class="text">
+                     <h4>I'm Evgeny Volkov</h4>
+                     <h6>Beginning front-end developer</h6>
+                     <div class="about-me_text">
+                        <p>
+                           The first and main goal is to become an experienced web developer. I really want to work in a team of professionals under experienced mentors, on really cool projects.
+                           
+                           I’m learning pretty fast. I’m good at performance, I’m stressful, and I’m punctual. I’m willing to take on new projects and get things to the logical end.
+                           
+                           I work well as a team, I know how to solve conflicts and compromise responsibly. I spend my free time with my friends or study the great and powerful JS. Single.
+                        </p>
+                     </div>
+                     <div class="skills">
+                        <h6>My technical skills:</h6>
+                        <div class="skills-list">
+                        <ul  class="fa-ul">
+                           <li><span class="fa-li"><i class="fas fa-check-square"></i></span>JavaScript</li>
+                           <li><span class="fa-li"><i class="fas fa-check-square"></i></span>HTML5</li>
+                           <li><span class="fa-li"><i class="fas fa-check-square"></i></span>CSS/SCSS</li>
+                           <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Figma</li>
+                        </ul>
+                        <ul  class="fa-ul">
+                           <li><span class="fa-li"><i class="fas fa-check-square"></i></span>GitHub</li>
+                           <li><span class="fa-li"><i class="fas fa-check-square"></i></span>CSS/SCSS</li>
+                           <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Windows Server</li>
+                           <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Linux</li>
+                        </ul>
+                        </div>
+                     </div>
+                     <div class="contacts">
+                        <div class="social_networks">
+                           <ul>
+                              <li>
+                              <a href="Skippik1111@gmail.com" target="_blank" class="socia_main">
+                                 <img src="./icons/mail.svg" alt="Gmail" class="socia_logo">
+                              </a>
+                              </li>
+                              <li>
+                                 <a href="https://github.com/Skippik" target="_blank" class="socia_main">
+                                    <img src="./icons/website.svg" alt="GitHub" class="socia_logo">
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://www.instagram.com/skippik_volkov/?hl=ru" target="_blank" class="socia_main">
+                                    <img src="./icons/instagram.png" alt="instagram" class="socia_logo">
+                              </a>
+                              </li>
+                              <li>
+                                 <a href="https://join.skype.com/invite/BfTBJFrZV7rD" target="_blank" class="socia_main">
+                                       <img src="./icons/skype.png" alt="skype" class="socia_logo">
+                                 </a>
+                              </li>
+                              <li>
+                                 <!-- <span class="telegram">Telegram</span> -->
+                                 <a href="https://t.me/skippik" target="_blank" class="socia_main">
+                                       <img src="./icons/telegram.png" alt="telegram" class="socia_logo">
+                                 </a>
+                              </li>
+                              <li>
+                                 <!-- <span class="viber">Viber</span> -->
+                                 <a href="viber://chat?number=%2B375291290891" target="_blank" class="socia_main">
+                                       <img src="./icons/viber.png" alt="Viber" class="socia_logo">
+                                 </a>
+                              </li>
+                              <li>
+                                 <!-- <span class="VK">VK</span> -->
+                                 <a href="https://vk.com/skippik0293" target="_blank" class="socia_main">
+                                       <img src="./icons/vk.png" alt="VK" class="socia_logo">
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Образование -->
+      <section class="education" id="education">
+         <div class="container">
+            <div class="row">
+               <div class="title text-center">
+                  <h1>Education</h1>
+               </div>
+            </div>
+            <div class="row">
+               <div class="education-content">
+                  <div class="box">
+                     <h5>Vitebsk State Polytechnic College</h5>
+                     <p>Information technology software</p>
+                     <p>2016-2018 year</p>
+                  </div>
+                  <div class="box">
+                     <h5>Softline</h5>
+                     <p>Windows server 2012 - 2019</p>
+                     <p>Graduated from the course on setting up and maintaining windows server</p>
+                     <p>2016-2018 year</p>
+                  </div>
+                  <div class="box">
+                     <h5>CodeAcademy</h5>
+                     <p>HTML / CSS Basics</p>
+                     <p>2020 year</p>
+                  </div>
+                  <div class="box">
+                     <h5>RSSchool</h5>
+                     <p>RSSchool stage0</p>
+                     <p>2021 year</p>
+                     <div class="portfolio-text">
+                        <h3>RSSchool</h3>
+                        <a href="https://app.rs.school/certificate/w3trjtba">LINK</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Опыт работы -->
+      <section class="experience" id="experience">
+         <div class="container">
+            <div class="row">
+               <div class="title text-center">
+                  <h1>experience</h1>
+               </div>
+            </div>
+            <div class="row">
+               <div class="experience-content">
+                  <div class="box box-experience">
+                     <h5>NPP “Belkotlomash” ООО</h5>
+                     <p>System administrator</p>
+                     <p>Created from scratch the entire network architecture of the enterprise was engaged in the procurement and maintenance of PC users and other peripherals</p>
+                     <p>2012-2021 year</p>
+                  </div>
+                  <div class="box box-experience">
+                     <h5>ООО “BelBoilerTreid” and NPP “Belkotlomash” ООО </h5>
+                     <p>System administrator</p>
+                     <p>Сreation and support of remote work of three offices in three different cities. Domain setup based on VMWare support and development of internal software of enterprises configuring and maintaining virtualization clusters</p>
+                     <p>2017-2021 year</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Выполненные проекты -->
+      <section class="portfolio" id="portfolio">
+         <div class="container">
+            <div class="row">
+               <div class="title text-center">
+                  <h1>My projects</h1>
+               </div>
+            </div>
+            <div class="row">
+               <div class="portfolio-content">
+                  <div class="portfolio-box">
+                     <div class="portfolio-img">
+                        <img src='./img/portfolio/JobHanter.png' />
+                     </div>
+                     <div class="portfolio-text">
+                        <h3>Job-Hanter</h3>
+                        <a href="https://skippik.github.io/JobHanter/">LINK</a>
+                     </div>
+                  </div>
+                  <div class="portfolio-box">
+                     <div class="portfolio-img">
+                        <img src='./img/portfolio/venom2.png' />
+                     </div>
+                     <div class="portfolio-text">
+                        <h3>VENOM-2</h3>
+                        <a href="https://skippik.github.io/venom_2/">LINK</a>
+                     </div>
+                  </div>
+                  <div class="portfolio-box">
+                     <div class="portfolio-img">
+                        <img src='./img/portfolio/heartRateMonitor.png' />
+                     </div>
+                     <div class="portfolio-text">
+                        <h3>Heart Rate Monitor</h3>
+                        <a href="https://skippik.github.io/heartRateMonitor/">LINK</a>
+                     </div>
+                  </div>
+                  <div class="portfolio-box">
+                     <div class="portfolio-img">
+                        <img src='./img/portfolio/race.png' />
+                     </div>
+                     <div class="portfolio-text">
+                        <h3>RACE</h3>
+                        <a href="https://skippik.github.io/RACE/">LINK</a>
+                     </div>
+                  </div>
+                  <div class="portfolio-box">
+                     <div class="portfolio-img">
+                        <img src='./img/portfolio/Math-Game.png'/>
+                     </div>
+                     <div class="portfolio-text">
+                        <h3>Math-Game</h3>
+                        <a href="https://skippik.github.io/Math-Game-VitebsEnergo/">LINK</a>
+                     </div>
+                  </div>
+                  <div class="portfolio-box">
+                     <div class="portfolio-img">
+                        <img src='./img/portfolio/ticTac.png'/>
+                     </div>
+                     <div class="portfolio-text">
+                        <h3>Math-Game</h3>
+                        <a href="https://skippik.github.io/TicTac/">LINK</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Подвал -->
+      <footer id="footer">
+         <div class="container">
+            <div class="row">
+               <div class="footer-logo">RS School</div>
+               <div class="footer-name">Evgeny Volkov</div>
+               <div class="social_networks">
+                  <ul>
+                     <li>
+                     <a href="Skippik1111@gmail.com" target="_blank" class="socia_main">
+                        <img src="./icons/mail.svg" alt="Gmail" class="socia_logo">
+                     </a>
+                     </li>
+                     <li>
+                        <a href="https://github.com/Skippik" target="_blank" class="socia_main">
+                           <img src="./icons/website.svg" alt="GitHub" class="socia_logo">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://www.instagram.com/skippik_volkov/?hl=ru" target="_blank" class="socia_main">
+                           <img src="./icons/instagram.png" alt="instagram" class="socia_logo">
+                     </a>
+                     </li>
+                     <li>
+                        <a href="https://join.skype.com/invite/BfTBJFrZV7rD" target="_blank" class="socia_main">
+                              <img src="./icons/skype.png" alt="skype" class="socia_logo">
+                        </a>
+                     </li>
+                     <li>
+                        <!-- <span class="telegram">Telegram</span> -->
+                        <a href="https://t.me/skippik" target="_blank" class="socia_main">
+                              <img src="./icons/telegram.png" alt="telegram" class="socia_logo">
+                        </a>
+                     </li>
+                     <li>
+                        <!-- <span class="viber">Viber</span> -->
+                        <a href="viber://chat?number=%2B375291290891" target="_blank" class="socia_main">
+                              <img src="./icons/viber.png" alt="Viber" class="socia_logo">
+                        </a>
+                     </li>
+                     <li>
+                        <!-- <span class="VK">VK</span> -->
+                        <a href="https://vk.com/skippik0293" target="_blank" class="socia_main">
+                              <img src="./icons/vk.png" alt="VK" class="socia_logo">
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            </div>
+         </div>
+      </footer>
+      <script src="./js/app.js"></script>
+   </body>
 </html>
+
