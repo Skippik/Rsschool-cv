@@ -106,6 +106,13 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    & h2 {
+      color: #000;
+      display: inline-block;
+      font-size: 35px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
 }
 
 .social_networks {
