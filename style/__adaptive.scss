@@ -139,6 +139,9 @@ header {
 }
 
 @media(max-width: 655px) {
+    li {
+        margin: 0;
+    }
     .home-block {
         & h6 {
             color: #253846;
@@ -269,6 +272,14 @@ header {
     max-width: 100%;
 
 }
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 }
 
 @media(max-width: 376px) {
