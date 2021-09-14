@@ -6,6 +6,11 @@
     background-color: rgb(97, 103, 112);
 }
 
+
+.about-me .container .row .title h1::before {
+  left: 30%;
+}
+
 .title {
   text-align: center;
 }

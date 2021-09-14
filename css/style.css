@@ -821,6 +821,10 @@ header {
   background-color: #616770;
 }
 
+.about-me .container .row .title h1::before {
+  left: 30%;
+}
+
 .title {
   text-align: center;
 }
