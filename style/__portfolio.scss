@@ -1,8 +1,21 @@
 .portfolio {
     background-color: #fff;
-    padding: 100px 0px;
+    padding: 100px 15px 70px;
 }
 
+.code {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.code span {
+    font-size: 25px;
+    font-weight: 600;
+    color: #000;
+}
 .portfolio .container .row .title h1::before {
     left: 30%;
 }
@@ -10,12 +23,12 @@
 .portfolio-content {
     display: flex;
     max-width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
+    // flex-direction: column;
 }
 
 .portfolio-box {
     width: 100%;
-    width: 600px;
     border: 1px solid #ddd;
     background-color: rgb(236, 241, 250);
     border-radius: 5px;
