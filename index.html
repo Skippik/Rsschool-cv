@@ -5,6 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="./icons/rs_school_js.svg" type="image/x-icon">
+      <link rel="stylesheet" href="./css/github-dark.min.css">
       <link rel="stylesheet" href="./css/style.css">
       <title>CV-Resume</title>
    </head>
@@ -264,6 +265,21 @@
                   </a>
                </div>
             </div>
+            <div class="code">
+               <span>Code</span>
+               <pre>
+                  <code>
+                     function solution(number) {
+                        let arr = [];
+                        for (let i = number - 1; i >= 0; i--) {
+                          if (i % 3 === 0) arr.push(i);
+                          if (i % 5 === 0) arr.push(i);
+                        }
+                        return [...new Set(arr)].reduce((a, b) => a + b, 0);
+                      }
+                  </code>
+               </pre>
+            </div>
          </div>
       </section>
       <!-- Подвал -->
@@ -278,6 +294,8 @@
             </div>
       </footer>
       <script src="./js/app.js"></script>
+      <script src="./js/highlight.js"></script>
+      <script>hljs.highlightAll();</script>
    </body>
 </html>
 

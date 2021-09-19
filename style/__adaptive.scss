@@ -288,3 +288,53 @@ header {
         align-items:flex-start;
     }
 } 
+
+@media(max-width: 320px) {
+    header {
+        margin: 0;
+        padding: 0;
+        width: 320px;
+    }
+    .menu__icon {
+        top: 20%;
+        right: 20%;
+    }
+    
+    .about-me_text p{
+        max-width: 100%;
+        width: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social_networks {
+        max-width: 100%;
+        width: 320px;
+        & ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            list-style-type: none;
+            align-items: center;
+        }
+        & li {
+            margin: 0;
+        }
+    }
+
+    .portfolio-content {
+        display: flex;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolio-box {
+        margin: 0;
+        padding: 0;
+    }
+
+} 
