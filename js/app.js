@@ -12,7 +12,6 @@ window.onscroll = function () {
   }
 }
 
-
 const body = document.getElementById('body')
 const burgerMenuButton = document.getElementById('menu-icon');
 const menuLinks = document.querySelectorAll('.nav__link[data-goto]');
@@ -38,3 +37,4 @@ const hamBurger = document.querySelector(".menu__icon");
 hamBurger.addEventListener("click", function () {
   document.querySelector(".navbar").classList.toggle("show");
 })
+
