@@ -123,6 +123,8 @@
 }
 
 .social_networks {
+    width: 100%;
+    width: 300px;
     margin-top: 5px;
     & ul {
         margin: 0;
@@ -132,7 +134,10 @@
         list-style-type: none;
     }
     & li {
-      margin-right: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // margin-right: 20px;
     }
 }
 
