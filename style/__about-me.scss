@@ -108,90 +108,85 @@
     color: #fff;
   }
 
-.contacts {
-    margin-top: 20px;
+
+
+
+.card-img img{
+  width: 80px;
+}
+
+.about-me_card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 35px;
+  & h2 {
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+    color: #222;
+    letter-spacing: 2px;
+  }
+}
+
+.about-me_box.active{
+  height: 30rem;
+  
+}
+
+.about-me_box {
+  position: relative;
+  width: 20rem;
+  height: 11.5rem;
+  background-color: rgb(97, 103, 112);
+  padding: 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  overflow: hidden;
+  transition: height .4s ease-in;
+  & ul {
+    position: relative;
+    border-top: 1px solid rgba(0, 0, 0, 0.938);
+    margin-top: 1.5rem;
+    padding: 1rem 0;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    & h2 {
-      color: #000;
-      display: inline-block;
-      font-size: 35px;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
+    gap: 2rem;
+  }
+  & ul a {
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.767);
+    transition: 0.2s;
+  }
+  & ul a:hover {
+    color: #9de9f3;
+  }
+}
+.fa {
+  font-size: 2rem;
+  margin-right: 1rem;
 }
 
-.social_networks {
-    width: 100%;
-    width: 300px;
-    margin-top: 5px;
-    & ul {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: space-around;
-        list-style-type: none;
-    }
-    & li {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      // margin-right: 20px;
-    }
+.toggle{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgb(97, 103, 112);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-.socia_main {
-    font-family: Fira Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 10px;
-    color: #fff;
-    text-decoration: none;
+.toggle > .fa{
+  margin: auto;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.25s;
+  font-size: 1.8rem;
 }
 
-.socia_logo {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.5s;
-}
-
-.email:hover {
-    opacity: 1;
-    transform: scale(1.1);
-    background: #253846;
-    transition: transform 0.5s, 
-    background 0.5s;
-}
-
-.phone:hover {
-    opacity: 1;
-    transform: scale(1.1);
-    background: #253846;
-    transition: transform 0.5s, 
-    background 0.5s;
-}
-
-.web_site:hover {
-    opacity: 1;
-    transform: scale(1.1);
-    background: #253846;
-    transition: transform 0.5s, 
-    background 0.5s;
-}
-
-.social_networks ul li:hover span {
-    opacity: 1;
-    visibility: visible;
-    transition: 0.5s ease-in-out;
-    z-index: 1;
-    transition: visibility 0.5s;
-}
-
-.socia_logo:hover {
-    opacity: 1;
-    transform: scale(1.6);
-    transition: transform 0.5s, 
-    background 0.5s;
+.about-me_box.active .toggle > .fa{
+  transform: rotate(-540deg);
 }

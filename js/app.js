@@ -38,3 +38,12 @@ hamBurger.addEventListener("click", function () {
   document.querySelector(".navbar").classList.toggle("show");
 })
 
+
+
+const container = document.querySelector('.about-me_box');
+const toggle = document.querySelector('.toggle');
+
+toggle.addEventListener('click', () => {
+    container.classList.toggle('active');
+});
+
